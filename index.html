@@ -1,13 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Outfitters - Shop new arrivals & latest trends for men, women and juniors online. Pakistan's leading fashion brand.">
+    <title>Outfitters | Official Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <br>
-    Hello World!
-    <br>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>FREE SHIPPING ON ORDERS OVER PKR 3,000 &nbsp;|&nbsp; NEW ARRIVALS DROPPING WEEKLY</p>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="#" class="logo">OUTFITTERS</a>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="#men" class="nav-link">MEN</a></li>
+                    <li><a href="#women" class="nav-link">WOMEN</a></li>
+                    <li><a href="#juniors" class="nav-link">JUNIORS</a></li>
+                    <li><a href="#new" class="nav-link active">NEW & TRENDING</a></li>
+                    <li><a href="#footwear" class="nav-link">FOOTWEAR</a></li>
+                    <li><a href="#fragrances" class="nav-link">FRAGRANCES</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Search Icon -->
+                <button class="icon-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <!-- Account Icon -->
+                <button class="icon-btn" aria-label="Account">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <!-- Cart Icon -->
+                <button class="icon-btn cart-btn" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-slide active">
+            <img src="hero_banner.png" alt="Outfitters SS26 Collection" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-tag">SS'26 COLLECTION</span>
+                <h1 class="hero-title">DENIM<br>REDEFINED</h1>
+                <p class="hero-subtitle">Discover the new season's boldest looks</p>
+                <a href="#" class="hero-cta">SHOP NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Cards -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SHOP BY CATEGORY</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="category-grid">
+                <a href="#men" class="category-card" id="cat-men">
+                    <div class="category-image cat-men-bg"></div>
+                    <div class="category-overlay">
+                        <h3>MEN</h3>
+                        <span class="category-cta">Explore →</span>
+                    </div>
+                </a>
+                <a href="#women" class="category-card" id="cat-women">
+                    <div class="category-image cat-women-bg"></div>
+                    <div class="category-overlay">
+                        <h3>WOMEN</h3>
+                        <span class="category-cta">Explore →</span>
+                    </div>
+                </a>
+                <a href="#juniors" class="category-card" id="cat-juniors">
+                    <div class="category-image cat-juniors-bg"></div>
+                    <div class="category-overlay">
+                        <h3>JUNIORS</h3>
+                        <span class="category-cta">Explore →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- In Layers Banner -->
+    <section class="layers-banner">
+        <div class="layers-content">
+            <span class="layers-tag">COLLECTION</span>
+            <h2 class="layers-title">IN LAYERS</h2>
+            <p class="layers-desc">Layer up in style. Explore our latest outerwear, hoodies, and jackets built for the
+                season.</p>
+            <a href="#" class="layers-cta">SHOP THE LOOK</a>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="products" id="new">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NEW & TRENDING</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">The freshest drops you need in your wardrobe</p>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F1828-106-2_e2fdfa1c-d71c-4eae-a40f-c8dd3f29f2e9.webp?v=1738321949&width=600"
+                            alt="Basic Ottoman T-Shirt" class="product-img" loading="lazy">
+                        <div class="product-badge">NEW</div>
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Basic Ottoman T-Shirt</h4>
+                        <p class="product-price">PKR 1,690</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background:#1a1a1a" title="Black"></span>
+                            <span class="color-dot" style="background:#e8e0d5" title="Cream"></span>
+                            <span class="color-dot" style="background:#6b8f71" title="Olive"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0715-109-2.webp?v=1737016048&width=600"
+                            alt="Baggy Fit Jeans" class="product-img" loading="lazy">
+                        <div class="product-badge hot">HOT</div>
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Baggy Fit Jeans</h4>
+                        <p class="product-price">PKR 3,490</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background:#4a6fa5" title="Medium Blue"></span>
+                            <span class="color-dot" style="background:#1c2e4a" title="Dark Blue"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F1727-106-2_41fbf46b-f5df-47b7-be85-dc1eead3a06c.webp?v=1738846694&width=600"
+                            alt="Embroidered Polo Shirt" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Embroidered Slogan Polo Shirt</h4>
+                        <p class="product-price">PKR 2,290</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background:#f5f5f0" title="Off White"></span>
+                            <span class="color-dot" style="background:#2c2c2c" title="Charcoal"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0624-108-2.webp?v=1737101327&width=600"
+                            alt="Terry Wide Leg Trousers" class="product-img" loading="lazy">
+                        <div class="product-badge">NEW</div>
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Terry Wide Leg Trousers</h4>
+                        <p class="product-price">PKR 2,790</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background:#c4b5a0" title="Beige"></span>
+                            <span class="color-dot" style="background:#3b3b3b" title="Charcoal"></span>
+                            <span class="color-dot" style="background:#e8ddd0" title="Sand"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-wrap">
+                <a href="#" class="view-all-btn">VIEW ALL NEW ARRIVALS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop the Style Banner -->
+    <section class="style-banner">
+        <div class="container">
+            <div class="style-grid">
+                <div class="style-card">
+                    <div class="style-card-image style-1-bg"></div>
+                    <div class="style-card-content">
+                        <span class="style-label">MEN'S EDIT</span>
+                        <h3>T-Shirts &<br>Polos</h3>
+                        <a href="#" class="style-link">Shop Now →</a>
+                    </div>
+                </div>
+                <div class="style-card tall">
+                    <div class="style-card-image style-2-bg">
+                        <img src="products_flatlay.png" alt="Categories in Focus" class="style-img">
+                    </div>
+                    <div class="style-card-content center">
+                        <span class="style-label">CATEGORIES IN FOCUS</span>
+                        <h3>Must-Haves</h3>
+                        <a href="#" class="style-link">Explore →</a>
+                    </div>
+                </div>
+                <div class="style-card">
+                    <div class="style-card-image style-3-bg"></div>
+                    <div class="style-card-content">
+                        <span class="style-label">WOMEN'S EDIT</span>
+                        <h3>Dresses &<br>Skirts</h3>
+                        <a href="#" class="style-link">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Men's Best Sellers -->
+    <section class="products" id="men">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MEN'S BEST SELLERS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F1718-106-2_e0ac6aae-8e4e-47b1-ab0a-cfd8e9f9c917.webp?v=1738846694&width=600"
+                            alt="Embroidered Graphic T-Shirt" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Embroidered Graphic T-Shirt</h4>
+                        <p class="product-price">PKR 1,990</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0747-109-2.webp?v=1737016049&width=600"
+                            alt="Baggy Jeans With Laser Print" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Baggy Jeans With Laser Print</h4>
+                        <p class="product-price">PKR 3,990</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F1509-106-2_1f9dbe8a-42b4-457d-9a06-c04cf4b1ba2f.webp?v=1738757997&width=600"
+                            alt="Knitted Button-Up Polo" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Knitted Button-Up Polo</h4>
+                        <p class="product-price">PKR 2,490</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0978-103-2.webp?v=1737438316&width=600"
+                            alt="Resort Collar Slogan Shirt" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Resort Collar Slogan Shirt</h4>
+                        <p class="product-price">PKR 2,790</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Best Sellers -->
+    <section class="products alt-bg" id="women">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">WOMEN'S BEST SELLERS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F1334-206-2.webp?v=1737358605&width=600"
+                            alt="Cropped T-Shirt" class="product-img" loading="lazy">
+                        <div class="product-badge">NEW</div>
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Cropped T-Shirt</h4>
+                        <p class="product-price">PKR 1,390</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0598-209-2.webp?v=1737034832&width=600"
+                            alt="High Rise Wide Leg Jeans" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">High Rise Wide Leg Jeans</h4>
+                        <p class="product-price">PKR 3,490</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0867-203-2.webp?v=1737439155&width=600"
+                            alt="Textured Shirt" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Textured Shirt</h4>
+                        <p class="product-price">PKR 2,490</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://outfitters.com.pk/cdn/shop/files/F0287-204-2.webp?v=1737022741&width=600"
+                            alt="Striped T-Shirt Dress" class="product-img" loading="lazy">
+                        <button class="quick-add" aria-label="Quick add">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-name">Striped T-Shirt Dress</h4>
+                        <p class="product-price">PKR 2,990</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essentials Strip -->
+    <section class="essentials">
+        <div class="essentials-inner">
+            <span>ESSENTIALS</span>
+            <span>•</span>
+            <span>DENIM</span>
+            <span>•</span>
+            <span>T-SHIRTS</span>
+            <span>•</span>
+            <span>TROUSERS</span>
+            <span>•</span>
+            <span>ACTIVEWEAR</span>
+            <span>•</span>
+            <span>FRAGRANCES</span>
+            <span>•</span>
+            <span>FOOTWEAR</span>
+            <span>•</span>
+            <span>ESSENTIALS</span>
+            <span>•</span>
+            <span>DENIM</span>
+            <span>•</span>
+            <span>T-SHIRTS</span>
+            <span>•</span>
+            <span>TROUSERS</span>
+        </div>
+    </section>
+
+    <!-- Style Gallery -->
+    <section class="products" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">STYLE GALLERY</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Fresh outfit inspiration in pictures</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+                            alt="Woman in street style outfit" class="product-img" loading="lazy">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+                            alt="Minimal men fashion look" class="product-img" loading="lazy">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+                            alt="Trendy layered casual outfit" class="product-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Community -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">BE THE FIRST TO KNOW</h2>
+                <p class="newsletter-desc">Sign up for exclusive access to new arrivals, special offers, and
+                    insider-only discounts.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">OUTFITTERS</h3>
+                    <p class="footer-desc">Pakistan's leading fashion brand offering trendy clothing for Men, Women, and
+                        Juniors.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.93 2.93 0 0 1 .88.13V9.05a6.33 6.33 0 0 0-.88-.05 6.34 6.34 0 1 0 6.34 6.34V9.5a8.27 8.27 0 0 0 3.76.92V7z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">CUSTOMER SERVICE</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">COMPANY</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">DOWNLOAD APP</h4>
+                    <p class="footer-app-text">Shop on the go with our mobile app</p>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                            App Store
+                        </a>
+                        <a href="#" class="app-badge">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 0 1-.609-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.707l2.108 1.22a1 1 0 0 1 0 1.56l-2.108 1.22-2.536-2.536 2.536-2.464zM5.864 2.658L16.8 8.991l-2.302 2.302-8.634-8.635z" />
+                            </svg>
+                            Google Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Outfitters. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <span class="payment-icon">VISA</span>
+                    <span class="payment-icon">MC</span>
+                    <span class="payment-icon">JCB</span>
+                    <span class="payment-icon">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        // Sticky header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 600);
+        });
+
+        // Mobile menu
+        document.getElementById('hamburgerBtn').addEventListener('click', () => {
+            document.getElementById('mainNav').classList.toggle('open');
+            document.getElementById('hamburgerBtn').classList.toggle('active');
+        });
+
+        // Back to top
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Newsletter form
+        document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = e.target.querySelector('input');
+            input.value = '';
+            alert('Thank you for subscribing!');
+        });
+
+        // Animate on scroll
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .category-card, .style-card, .section-header').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
+
 </html>
